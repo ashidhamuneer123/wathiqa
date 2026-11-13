@@ -6,7 +6,7 @@ export const site = {
   nameAr: "وثيقة",
   taglineEn: "Documents Clearing Services",
   taglineAr: "لخدمات متابعة المعاملات",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://wathiqa-template.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://wathiqa-5bo.pages.dev",
   // WhatsApp number in international format, digits only (no +, no spaces)
   whatsapp: "971500000000",
   phoneDisplay: "+971 50 000 0000",

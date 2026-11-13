@@ -24,7 +24,7 @@ English / Arabic (RTL) switch · WhatsApp integration · social icons · mobile 
 | Photos | `public/images/about-main.jpg`, `about-small.jpg` (prompts in `IMAGE-PROMPTS.md`) |
 | WhatsApp/Facebook link-preview picture (1200×630) | `public/og.png` |
 | Colours | top of `app/globals.css` |
-| 3D hero | `components/three/SkylineScene.tsx` |
+| 3D hero (globe + Dubai skyline) | `components/three/GlobeScene.tsx` (Earth textures in `public/globe/`, NASA Blue Marble, public domain) |
 
 WhatsApp number format in `lib/site.ts`: digits only with country code, e.g. `971501234567`.
 
@@ -53,7 +53,7 @@ WhatsApp number format in `lib/site.ts`: digits only with country code, e.g. `97
 1. dash.cloudflare.com → sign up → **Workers & Pages → Create → Pages → Connect to Git** → choose the repo.
 2. Build settings:
    - Framework preset: **None**
-   - Build command: `npm run export`
+   - Build command: `npm run build`
    - Build output directory: `out`
    - Environment variables: `NODE_VERSION` = `20`, `NEXT_PUBLIC_SITE_URL` = `https://clientdomain.ae`
 3. **Save and Deploy** → you get `something.pages.dev`.
@@ -61,7 +61,7 @@ WhatsApp number format in `lib/site.ts`: digits only with country code, e.g. `97
 5. Every `git push` redeploys.
 
 ## 4C. Netlify
-Same as Cloudflare: build command `npm run export`, publish directory `out`, env `NEXT_PUBLIC_SITE_URL`.
+Same as Cloudflare: build command `npm run build`, publish directory `out`, env `NEXT_PUBLIC_SITE_URL`.
 
 ## 5. After going live — check
 - Open the site on your phone, test the hamburger menu and the Arabic switch.

@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "STATIC_EXPORT=1 next build"
+    "export": "next build"
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.1.0",

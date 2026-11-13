@@ -8,7 +8,7 @@ import { Logo } from "./Logo";
 import { site, waLink } from "@/lib/site";
 import type { ServiceKey } from "@/lib/content";
 
-const SkylineScene = dynamic(() => import("./three/SkylineScene"), { ssr: false });
+const GlobeScene = dynamic(() => import("./three/GlobeScene"), { ssr: false });
 const StampScene = dynamic(() => import("./three/StampScene"), { ssr: false });
 
 const SERVICE_KEYS: ServiceKey[] = ["passport", "emergency", "mohre", "visa", "typing", "pcc", "translation", "attestation"];
@@ -49,7 +49,7 @@ export function Hero() {
         <div className="hero-visual">
           <div className="sun" aria-hidden="true" />
           <div className="hero-canvas">
-            <SkylineScene compact={mobile} />
+            <GlobeScene compact={mobile} />
           </div>
           <div className="float-chip chip-a"><span className="dot" />{lang === "ar" ? "تمت الموافقة" : "Visa approved"}</div>
           <div className="float-chip chip-b"><WhatsAppIcon width={16} height={16} />{lang === "ar" ? "تحديث فوري" : "Live status on WhatsApp"}</div>
